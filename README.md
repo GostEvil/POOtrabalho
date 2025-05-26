@@ -12,4 +12,3 @@ git pull
 git status
 
 
-asd
