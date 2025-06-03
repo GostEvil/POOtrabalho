@@ -1,15 +1,10 @@
 #include "Exclusiva.h"
 #include <iostream>
 
-Exclusiva::Exclusiva(int codigo, string localidade)
-    : Sapataria(codigo, localidade) {}
+Exclusiva::Exclusiva(int i, std::string loc)
+    : Sapataria(i, loc) {}
 
-string Exclusiva::getTipo() const
-{
-    return "Exclusiva";
-}
-
-bool Exclusiva::registarVenda(Modelo *m, float preco, string dt)
+bool Exclusiva::registarVenda(Modelo *m, float preco, std::string dt)
 {
     // Implementação fictícia
     return true;

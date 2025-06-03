@@ -1,10 +1,10 @@
 #include "Concessionaria.h"
 #include <iostream>
 
-Concessionaria::Concessionaria(int i, string loc)
+Concessionaria::Concessionaria(int i, std::string loc)
     : Sapataria(i, loc) {}
 
-bool Concessionaria::registarVenda(Modelo *m, float preco, string dt)
+bool Concessionaria::registarVenda(Modelo *m, float preco, std::string dt)
 {
     // Implementação fictícia
     return true;
@@ -13,9 +13,4 @@ bool Concessionaria::registarVenda(Modelo *m, float preco, string dt)
 void Concessionaria::printVendas() const
 {
     std::cout << "Vendas da Concessionaria em " << localizacao << std::endl;
-}
-
-string Concessionaria::getTipo() const
-{
-    return "Concessionaria";
 }

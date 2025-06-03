@@ -1,7 +1,7 @@
 #include "Modelo.h"
-using namespace std;
+#include <iostream>
 
-Modelo::Modelo(int r, string d, float p, bool e)
+Modelo::Modelo(int r, std::string d, float p, bool e)
     : ref(r), descricao(d), pvr(p), exclusivo(e) {}
 
 float Modelo::getPVR() const
@@ -9,7 +9,7 @@ float Modelo::getPVR() const
     return pvr;
 }
 
-string Modelo::getDescricao() const
+std::string Modelo::getDescricao() const
 {
     return descricao;
 }
@@ -27,12 +27,11 @@ void Modelo::setPVR(float prec)
 
 bool Modelo::registarVenda(Venda *v)
 {
-    // Implementação fictícia, pois não há detalhes
+    // Implementação fictícia
     return true;
 }
 
 void Modelo::print() const
 {
-    // Exemplo de print
     std::cout << "Modelo #" << ref << ": " << descricao << " | PVR: " << pvr << " | Exclusivo: " << (exclusivo ? "Sim" : "Nao") << std::endl;
 }
