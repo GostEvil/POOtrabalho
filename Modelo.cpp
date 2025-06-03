@@ -1,31 +1,37 @@
 #include "Modelo.h"
 
-Modelo::Modelo(int codigo, string descricao, double pvr, bool exclusivo)
-    : codigo(codigo), descricao(descricao), pvr(pvr), exclusivo(exclusivo) {}
+Modelo::Modelo(int r, string d, float p, bool e)
+    : ref(r), descricao(d), pvr(p), exclusivo(e) {}
 
-int Modelo::getCodigo() const {
-    return codigo;
-}
-
-string Modelo::getDescricao() const {
-    return descricao;
-}
-
-double Modelo::getPVR() const {
+float Modelo::getPVR() const
+{
     return pvr;
 }
 
-bool Modelo::isExclusivo() const {
+string Modelo::getDescricao() const
+{
+    return descricao;
+}
+
+bool Modelo::modeloExclusivo() const
+{
     return exclusivo;
 }
 
-void Modelo::setPVR(double novoPVR) {
-    if (novoPVR >= 0) {
-        pvr = novoPVR;
-    }
+void Modelo::setPVR(float prec)
+{
+    if (prec >= 0)
+        pvr = prec;
 }
 
-bool Modelo::operator<(const Modelo& other) const {
-    return codigo < other.codigo;
+bool Modelo::registarVenda(Venda *v)
+{
+    // Implementação fictícia, pois não há detalhes
+    return true;
 }
 
+void Modelo::print() const
+{
+    // Exemplo de print
+    std::cout << "Modelo #" << ref << ": " << descricao << " | PVR: " << pvr << " | Exclusivo: " << (exclusivo ? "Sim" : "Nao") << std::endl;
+}

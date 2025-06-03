@@ -1,17 +1,17 @@
 #include "Sapataria.h"
+#include <iostream>
 
-Sapataria::Sapataria(int codigo, string localidade)
-    : codigo(codigo), localidade(localidade) {}
+Sapataria::Sapataria(int i, string loc)
+    : id(i), localizacao(loc) {}
 
-int Sapataria::getCodigo() const {
-    return codigo;
+bool Sapataria::registarVenda(Modelo *m, float preco, string dt)
+{
+    // Implementação fictícia
+    return true;
 }
 
-string Sapataria::getLocalidade() const {
-    return localidade;
+void Sapataria::printVendas() const
+{
+    // Implementação fictícia
+    std::cout << "Vendas da sapataria " << id << " em " << localizacao << std::endl;
 }
-
-bool Sapataria::operator<(const Sapataria& other) const {
-    return codigo < other.codigo;
-}
-

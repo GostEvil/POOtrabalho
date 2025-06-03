@@ -1,30 +1,14 @@
 #include "Venda.h"
-#include "Modelo.h"
-#include "Sapataria.h"
+#include <iostream>
 
-Venda::Venda(int numero, string data, double precoFinal, Modelo* modelo, Sapataria* sapataria)
-    : numero(numero), data(data), precoFinal(precoFinal), modelo(modelo), sapataria(sapataria) {}
-
-int Venda::getNumero() const {
-    return numero;
+Venda::Venda(int i, float prec, string d, Modelo *m, Sapataria *s)
+    : id(i), preco(prec), data(d)
+{
+    // Se precisares de guardar Modelo* ou Sapataria*, tens de adicionar atributos no .h
+    // Mas como só podes ter id, preco, data, não guardes ponteiros!
 }
 
-string Venda::getData() const {
-    return data;
-}
-
-double Venda::getPrecoFinal() const {
-    return precoFinal;
-}
-
-Modelo* Venda::getModelo() const {
-    return modelo;
-}
-
-Sapataria* Venda::getSapataria() const {
-    return sapataria;
-}
-
-bool Venda::operator<(const Venda& other) const {
-    return numero < other.numero;
+void Venda::print() const
+{
+    std::cout << "Venda #" << id << ": " << preco << "€ em " << data << std::endl;
 }

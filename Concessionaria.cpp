@@ -1,9 +1,21 @@
 #include "Concessionaria.h"
+#include <iostream>
 
-Concessionaria::Concessionaria(int codigo, string localidade)
-    : Sapataria(codigo, localidade) {}
+Concessionaria::Concessionaria(int i, string loc)
+    : Sapataria(i, loc) {}
 
-string Concessionaria::getTipo() const {
-    return "Concessionaria";
+bool Concessionaria::registarVenda(Modelo *m, float preco, string dt)
+{
+    // Implementação fictícia
+    return true;
 }
 
+void Concessionaria::printVendas() const
+{
+    std::cout << "Vendas da Concessionaria em " << localizacao << std::endl;
+}
+
+string Concessionaria::getTipo() const
+{
+    return "Concessionaria";
+}
