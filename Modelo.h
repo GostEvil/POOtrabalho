@@ -3,18 +3,22 @@
 #include <string>
 using namespace std;
 
-class Modelo {
+class Venda; // Forward declaration
+
+class Modelo
+{
 private:
-    int codigo;
+    int ref;
     string descricao;
-    double pvr;
+    float pvr;
     bool exclusivo;
+
 public:
-    Modelo(int codigo, string descricao, double pvr, bool exclusivo);
-    int getCodigo() const;
+    Modelo(int r, string d, float p, bool e);
+    float getPVR() const;
     string getDescricao() const;
-    double getPVR() const;
-    bool isExclusivo() const;
-    void setPVR(double novoPVR);
-    bool operator<(const Modelo& other) const;
+    bool modeloExclusivo() const;
+    void setPVR(float prec);
+    bool registarVenda(Venda *v);
+    void print() const;
 };

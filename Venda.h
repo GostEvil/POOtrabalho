@@ -6,20 +6,14 @@ using namespace std;
 class Modelo;
 class Sapataria;
 
-class Venda {
+class Venda
+{
 private:
-    int numero;
+    int id;
+    float preco;
     string data;
-    double precoFinal;
-    Modelo* modelo;
-    Sapataria* sapataria;
-public:
-    Venda(int numero, string data, double precoFinal, Modelo* modelo, Sapataria* sapataria);
-    int getNumero() const;
-    string getData() const;
-    double getPrecoFinal() const;
-    Modelo* getModelo() const;
-    Sapataria* getSapataria() const;
-    bool operator<(const Venda& other) const;
-};
 
+public:
+    Venda(int i, float prec, string d, Modelo *m, Sapataria *s);
+    void print() const;
+};

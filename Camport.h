@@ -2,24 +2,22 @@
 
 #include "Modelo.h"
 #include "Sapataria.h"
+#include "Exclusiva.h"
+#include "Concessionaria.h"
 #include "Venda.h"
-#include "Colecao.h"
+#include "ColecaoHibrida.h"
 #include <string>
 using namespace std;
 
-class Camport {
-private:
-    Colecao<Modelo> modelos;
-    Colecao<Sapataria*> sapatarias;
-    Colecao<Venda> vendas;
+class Camport
+{
 public:
-    Modelo* adicionarModelo(string descricao, double pvr, bool exclusivo);
-    Sapataria* adicionarSapataria(string tipo, string localidade); // tipo: "Exclusiva" ou "Concessionaria"
-    bool atualizarPVR(int codigoModelo, double novoPVR);
-    bool registarVenda(int codigoModelo, int codigoSapataria, string data, double precoFinal);
-    void listarVendasSapataria(int codigoSapataria) const;
-    Modelo* encontrarModelo(int codigo);
-    Sapataria* encontrarSapataria(int codigo);
+    bool addModelo(string d, float p, bool sap);
+    bool addExclusiva(string loc);
+    bool addConcessionaria(string loc);
+    bool setPVR(int ref, float prec);
+    bool registarVenda(int ref, int sap, float prec, string dt);
+    void printVendasSapataria(int i) const;
+    Modelo *findModelo(int ref);
+    Sapataria *findSapataria(int i);
 };
-
-

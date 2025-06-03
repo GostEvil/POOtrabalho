@@ -3,15 +3,16 @@
 #include <string>
 using namespace std;
 
-class Sapataria {
+class Modelo;
+
+class Sapataria
+{
 protected:
-    int codigo;
-    string localidade;
+    int id;
+    string localizacao;
+
 public:
-    Sapataria(int codigo, string localidade);
-    int getCodigo() const;
-    string getLocalidade() const;
-    virtual string getTipo() const = 0; // Exclusiva / Concessionaria
-    virtual ~Sapataria() {}
-    bool operator<(const Sapataria& other) const;
+    Sapataria(int i, string loc);
+    virtual bool registarVenda(Modelo *m, float preco, string dt);
+    virtual void printVendas() const;
 };

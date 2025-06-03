@@ -2,8 +2,10 @@
 
 #include "Sapataria.h"
 
-class Exclusiva : public Sapataria {
+class Exclusiva : public Sapataria
+{
 public:
-    Exclusiva(int codigo, string localidade);
-    string getTipo() const override;
+    Exclusiva(int i, string loc);
+    bool registarVenda(Modelo *m, float preco, string dt) override;
+    void printVendas() const override;
 };

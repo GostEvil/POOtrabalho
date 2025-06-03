@@ -2,8 +2,10 @@
 
 #include "Sapataria.h"
 
-class Concessionaria : public Sapataria {
+class Concessionaria : public Sapataria
+{
 public:
-    Concessionaria(int codigo, string localidade);
-    string getTipo() const override;
+    Concessionaria(int i, string loc);
+    bool registarVenda(Modelo *m, float preco, string dt) override;
+    void printVendas() const override;
 };
