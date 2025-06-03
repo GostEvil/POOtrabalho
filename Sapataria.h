@@ -7,8 +7,10 @@ class Modelo;
 
 class Sapataria
 {
-protected:
+private:
     int id;
+
+protected:
     string localizacao;
 
 public:

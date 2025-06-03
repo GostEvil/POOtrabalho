@@ -1,4 +1,5 @@
 #include "Modelo.h"
+using namespace std;
 
 Modelo::Modelo(int r, string d, float p, bool e)
     : ref(r), descricao(d), pvr(p), exclusivo(e) {}

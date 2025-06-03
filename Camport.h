@@ -11,6 +11,10 @@ using namespace std;
 
 class Camport
 {
+private:
+    Modelo *findModelo(int ref);
+    Sapataria *findSapataria(int i);
+
 public:
     bool addModelo(string d, float p, bool sap);
     bool addExclusiva(string loc);
@@ -18,6 +22,4 @@ public:
     bool setPVR(int ref, float prec);
     bool registarVenda(int ref, int sap, float prec, string dt);
     void printVendasSapataria(int i) const;
-    Modelo *findModelo(int ref);
-    Sapataria *findSapataria(int i);
 };
