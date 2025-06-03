@@ -1,5 +1,7 @@
 #include "Modelo.h"
 #include <iostream>
+using namespace std;
+// teste
 
 Modelo::Modelo(int r, std::string d, float p, bool e)
     : ref(r), descricao(d), pvr(p), exclusivo(e) {}
