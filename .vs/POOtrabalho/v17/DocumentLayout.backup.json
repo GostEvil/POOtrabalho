@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\nunos\\POOtrabalho\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nunos\\POOtrabalho\\Concessionaria.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Concessionaria.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nunos\\POOtrabalho\\camport||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:camport||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nunos\\POOtrabalho\\teste.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:teste.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nunos\\POOtrabalho\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -30,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,20 +50,57 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "camport",
+              "DocumentMoniker": "C:\\Users\\nunos\\POOtrabalho\\camport",
+              "RelativeDocumentMoniker": "camport",
+              "ToolTip": "C:\\Users\\nunos\\POOtrabalho\\camport",
+              "RelativeToolTip": "camport",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-03T13:47:51.096Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Concessionaria.h",
+              "DocumentMoniker": "C:\\Users\\nunos\\POOtrabalho\\Concessionaria.h",
+              "RelativeDocumentMoniker": "Concessionaria.h",
+              "ToolTip": "C:\\Users\\nunos\\POOtrabalho\\Concessionaria.h",
+              "RelativeToolTip": "Concessionaria.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-03T13:47:46.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "teste.h",
+              "DocumentMoniker": "C:\\Users\\nunos\\POOtrabalho\\teste.h",
+              "RelativeDocumentMoniker": "teste.h",
+              "ToolTip": "C:\\Users\\nunos\\POOtrabalho\\teste.h",
+              "RelativeToolTip": "teste.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-03T13:47:44.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\nunos\\POOtrabalho\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\nunos\\POOtrabalho\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-03T11:19:26.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Modelo.h",
               "DocumentMoniker": "C:\\Users\\nunos\\POOtrabalho\\Modelo.h",
               "RelativeDocumentMoniker": "Modelo.h",
@@ -59,12 +108,11 @@
               "RelativeToolTip": "Modelo.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-03T11:19:24.039Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T11:19:24.039Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Colecao.h",
               "DocumentMoniker": "C:\\Users\\nunos\\POOtrabalho\\Colecao.h",
               "RelativeDocumentMoniker": "Colecao.h",
@@ -72,12 +120,11 @@
               "RelativeToolTip": "Colecao.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-02T18:03:43.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T18:03:43.686Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Camport.h",
               "DocumentMoniker": "C:\\Users\\nunos\\POOtrabalho\\Camport.h",
               "RelativeDocumentMoniker": "Camport.h",
@@ -85,12 +132,11 @@
               "RelativeToolTip": "Camport.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-02T18:03:39.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T18:03:39.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Concessionaria.cpp",
               "DocumentMoniker": "C:\\Users\\nunos\\POOtrabalho\\Concessionaria.cpp",
               "RelativeDocumentMoniker": "Concessionaria.cpp",
@@ -98,8 +144,7 @@
               "RelativeToolTip": "Concessionaria.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-02T18:03:41.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T18:03:41.885Z"
             }
           ]
         }

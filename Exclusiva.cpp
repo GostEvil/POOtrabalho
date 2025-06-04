@@ -6,11 +6,10 @@ Exclusiva::Exclusiva(int i, std::string loc)
 
 bool Exclusiva::registarVenda(Modelo *m, float preco, std::string dt)
 {
-    // Implementação fictícia
     return true;
 }
 
 void Exclusiva::printVendas() const
 {
-    std::cout << "Vendas da Exclusiva em " << localizacao << std::endl;
+    std::cout << "Vendas da Sapataria Exclusiva Camport localizada em " << localizacao << std::endl;
 }

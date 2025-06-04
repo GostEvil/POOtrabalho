@@ -12,10 +12,14 @@ using namespace std;
 class Camport
 {
 private:
+    ColecaoHibrida<Modelo *> modelos;
+    ColecaoHibrida<Sapataria *> sapatarias;
+    ColecaoHibrida<Venda *> vendas;
     Modelo *findModelo(int ref);
     Sapataria *findSapataria(int i);
 
 public:
+    ~Camport();
     bool addModelo(string d, float p, bool sap);
     bool addExclusiva(string loc);
     bool addConcessionaria(string loc);

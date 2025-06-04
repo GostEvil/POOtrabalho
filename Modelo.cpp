@@ -1,7 +1,5 @@
 #include "Modelo.h"
 #include <iostream>
-using namespace std;
-// teste
 
 Modelo::Modelo(int r, std::string d, float p, bool e)
     : ref(r), descricao(d), pvr(p), exclusivo(e) {}
@@ -23,17 +21,22 @@ bool Modelo::modeloExclusivo() const
 
 void Modelo::setPVR(float prec)
 {
-    if (prec >= 0)
-        pvr = prec;
+    pvr = prec;
 }
 
 bool Modelo::registarVenda(Venda *v)
 {
-    // Implementação fictícia
+    // Não há coleção de vendas, retorna sempre true
     return true;
 }
 
 void Modelo::print() const
 {
-    std::cout << "Modelo #" << ref << ": " << descricao << " | PVR: " << pvr << " | Exclusivo: " << (exclusivo ? "Sim" : "Nao") << std::endl;
+    std::cout << "Modelo: " << descricao << " | PVR: " << pvr << " | Exclusivo: " << (exclusivo ? "Sim" : "Nao") << std::endl;
+}
+
+// Operador < global para Modelo (compara pela descricao)
+bool operator<(const Modelo &a, const Modelo &b)
+{
+    return a.getDescricao() < b.getDescricao();
 }

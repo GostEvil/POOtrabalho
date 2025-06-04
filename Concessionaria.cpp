@@ -6,7 +6,7 @@ Concessionaria::Concessionaria(int i, std::string loc)
 
 bool Concessionaria::registarVenda(Modelo *m, float preco, std::string dt)
 {
-    // Implementação fictícia
+    // Não há coleção de vendas, retorna sempre true
     return true;
 }
 
